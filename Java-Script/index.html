@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Javascript</title>
+    <script src="JS/script.html"></script>
+</head>
+<body>
+    <!-- JavaScript -->
+    <!-- internal, external -->
+</body>
+</html>
+<script>
+
+
+    console.log("125");
+
+// document.write("Hello");
+
+// variables
+// var, let, const
+
+// var - (global scope), redeclarable, value reassign
+
+var name1 = "Alice";
+console.log("Name : " + name1);
+
+var name1 = "John";
+console.log(name1);
+
+name1 = "Tony";
+console.log(name1);
+
+{
+  console.log(name1);
+
+  var age = 20;
+
+  console.log(age);
+}
+
+console.log(age);
+
+// let (block scope), not redeclarable, value reassign
+
+let city = "Ahmedabad";
+console.log("City : " + city); // concat
+
+// let city = "Mumbai";
+// console.log("City : " + city); // concat
+
+city = "Mumbai";
+console.log("City : " + city); // concat
+
+{
+  console.log(city);
+
+  let pincode = 383315;
+
+  console.log(pincode);
+}
+
+console.log("City : " + city); // concat
+// console.log(pincode);
+
+// const (block scope), not redeclarable, not value reassign
+
+const pi = 3.14;
+console.log(pi);
+
+// const pi = 3.15;
+// console.log(pi);
+
+// pi = 3.15;
+// console.log(pi);
+
+{
+  console.log(pi);
+
+  const a = 50;
+
+  console.log(a);
+}
+
+const a = 100;
+console.log(a);
+
+// data types - string(""), number, null, undefined, boolean(true/false), array, object
+
+let n = [100, 200, "333", 444, 555];
+
+console.log(n);
+console.log(n[0]);
+console.log(n[1]);
+console.log(n[2]);
+console.log(n[3]);
+console.log(n[4]);
+
+let arr = ["Raj", 20, "Ahmedabad", "India", "Team Leader"];
+document.write(arr);
+// object : (key:value)
+
+let obj = {
+  name: "Raj",
+  age: 20,
+  city: "Ahmedabad",
+  country: "India",
+  job_role: "Team Leader"
+};
+
+console.log(obj);
+console.log(obj.name);
+console.log(obj.age);
+console.log(obj.city);
+console.log(obj.country);
+console.log(obj.job_role);
+document.write(obj);
+</script>
+
+ // find maximum value from 3
+
+  let a = 50;
+  let b = 10;
+  let c = 100;
+
+  if (a > b && a > c) {
+    console.log("A is max");
+  } else if (b > a && b > c) {
+    console.log("B is max");
+  } else {
+    console.log("C is max");
+  }
+
+  //   find maximum value from 4
+
+  let aa = 500;
+  let bb = 100;
+  let cc = 800;
+  let dd = 10000;
+
+  if (aa > bb && aa > cc && aa > dd) {
+    console.log("AA is Max");
+  } else if ((bb > aa) & (bb > cc) & (bb > dd)) {
+    console.log("BB is Max");
+  } else if ((cc > aa) & (cc > bb) && cc > dd) {
+    console.log("CC is Max");
+  } else {
+    console.log("DD is Max");
+  }
+
+  // check input character is alphabet, digit or special character
+
+  //   let input = prompt("Enter Your Value");
+  let input = 5;
+
+  if ((input >= "A" && input <= "Z") || (input >= "a" && input <= "z")) {
+    console.log("Alphabet");
+  } else if (input >= 1 && input <= 20000) {
+    console.log("Digit");
+  } else {
+    console.log("Special Character");
+  }
+
+  // check input value is positive, negative or zero
+
+  let val = 0;
+
+  if (val > 0) {
+    console.log("Positive Value");
+  } else if (val < 0) {
+    console.log("Negative Value");
+  } else {
+    console.log("Zero");
+  }
+
+  // result grade
+
+  let maths = 90;
+  let science = 90;
+  let social_science = 80;
+  let english = 90;
+  let sanskrit = 80;
+  let hindi = 90;
+  let gujarati = 100;
+  let computer = 98;
+
+  let total_marks =
+    maths +
+    science +
+    social_science +
+    english +
+    sanskrit +
+    hindi +
+    gujarati +
+    computer;
+
+  //   console.log(total_marks);
+
+  let percentage = total_marks / 8;
+
+  console.log(percentage);
+
+  if (percentage >= 90 && percentage <= 100) {
+    console.log("A Grade");
+  } else if (percentage >= 80 && percentage < 90) {
+    console.log("B Grade");
+  } else if (percentage >= 70 && percentage < 79) {
+    console.log("C Grade");
+  } else if (percentage >= 60 && percentage < 69) {
+    console.log("D Grade");
+  } else if (percentage >= 50 && percentage < 59) {
+    console.log("E Grade");
+  } else {
+    console.log("Fail");
+  }
+  

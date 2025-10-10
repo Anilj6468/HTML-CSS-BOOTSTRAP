@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // 5 - integer
+  // 15.36 - float
+
+  let a = 15.36;
+
+  console.log(parseInt(a));
+
+  let b = 89;
+
+  console.log(parseFloat(b).toFixed(5));
+
+  // count notes of 500, 200, 100, 50, 20, 10, 5, 2, 1
+
+  let amount = 34815;
+
+  let n500, n200, n100, n50, n20, n10, n5, n2, n1;
+
+  n500 = n200 = n100 = n50 = n20 = n10 = n5 = n2 = n1 = 0;
+
+  console.log(amount);
+
+  if (amount >= 500) {
+    n500 = parseInt(amount / 500);
+    amount -= n500 * 500;
+    console.log(amount);
+  }
+
+  if (amount >= 200) {
+    n200 = parseInt(amount / 200);
+    amount -= n200 * 200;
+    console.log(amount);
+  }
+
+  if (amount >= 100) {
+    n100 = parseInt(amount / 100);
+    amount -= n100 * 100;
+    console.log(amount);
+  }
+
+  if (amount >= 50) {
+    n50 = parseInt(amount / 50);
+    amount -= n50 * 50;
+    console.log(amount);
+  }
+
+  if (amount >= 20) {
+    n20 = parseInt(amount / 20);
+    amount -= n20 * 20;
+  }
+
+  if (amount >= 10) {
+    n10 = parseInt(amount / 10);
+    amount -= n10 * 10;
+    console.log(amount);
+  }
+
+  if (amount >= 5) {
+    n5 = parseInt(amount / 5);
+    amount -= n5 * 5;
+    console.log(amount);
+  }
+
+  if (amount >= 2) {
+    n2 = parseInt(amount / 2);
+    amount -= n2 * 2;
+    console.log(amount);
+  }
+
+  if (amount >= 1) {
+    n1 = parseInt(amount / 1);
+    amount -= n1 * 1;
+    console.log(amount);
+  }
+
+  console.log(RS 500 Notes :- ${n500});
+  console.log(RS 200 Notes :- ${n200});
+  console.log(RS 100 Notes :- ${n100});
+  console.log(RS 50 Notes :- ${n50});
+  console.log(RS 20 Notes :- ${n20});
+  console.log(RS 10 Notes :- ${n10});
+  console.log(RS 5 Notes :- ${n5});
+  console.log(RS 2 Notes :- ${n2});
+  console.log(RS 1 Notes :- ${n1});
+  console.log(amount);
+</script>

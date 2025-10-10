@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        header {
+            height: 8vh;
+            background: tan;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px;
+        }
+
+        nav .nav-item {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link:hover .dropdown {
+            display: block;
+        }
+
+        .nav-item li {
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: absolute;
+            /* border: 1px solid black; */
+            width: 100px;
+            display: none;
+            background: rgb(210, 173, 125);
+            border-radius: 5px;
+        }
+
+        .dropdown li {
+            padding: 5px 10px;
+            border: 1px dashed red;
+            border-radius: 5px;
+            margin: 5px 0px;
+            cursor: pointer;
+        }
+
+        .dropdown li:hover {
+            background: rgb(209, 188, 159);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-item">
+                <li class="nav-link">Home <i class="fa-solid fa-angle-down"></i>
+                    <ul class="dropdown">
+                        <li>Home 1</li>
+                        <li>Home 2</li>
+                        <li>Home 3</li>
+                    </ul>
+                </li>
+                <li>About Us</li>
+                <li>Blogs</li>
+                <li class="nav-link">Services <i class="fa-solid fa-angle-down"></i>
+                    <ul class="dropdown">
+                        <li>Services 1</li>
+                        <li>Services 2</li>
+                        <li>Services 3</li>
+                        <li>Services 4</li>
+                        <li>Services 5</li>
+                    </ul>
+                </li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

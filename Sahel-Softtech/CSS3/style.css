@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/* Header Css Starts */
+.container {
+  width: 100%;
+  height: 95px;
+  background-color: #141d38;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+.logo img {
+  padding: 0px 20px 0px 20px;
+  height: 80px;
+  width: 95%;
+  margin-left: 50px;
+}
+.link ul {
+  display: flex;
+  gap: 30px;
+  font-weight: bold;
+}
+.link ul li a {
+  color: white;
+}
+.link ul li a:hover {
+  color: #0eecfc;
+}
+.icon ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 40px;
+  font-size: 20px;
+}
+.icon i {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 4px 4px;
+}
+/* Header Css Ends */
+
+/* Section-1 Starts */
+#section_1 {
+  width: 50%;
+}
+.para {
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffffff;
+  background-image: url(https://odetofuture.com/wp-content/uploads/2023/10/IMG_1-scaled.jpg);
+  background-position: center;
+  height: 750px;
+  padding-top: 160px;
+}
+.content,
+.content1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.box1 {
+  width: 29%;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+.box1 img {
+  padding-top: 20px;
+  width: 30px;
+  color: yellow;
+}
+.box1 p {
+  font-size: 20px;
+  padding-top: 50px;
+  color: rgb(241, 241, 241);
+}
+.box2 {
+  width: 29%;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+.box3 {
+  width: 29%;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+.box4 {
+  width: 29%;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+.box5 {
+  width: 29%;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+.box6 {
+  width: 29%;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+/* Section-1 Ends */
+
+/* Section-2 Starts */
+#Section_2
+{
+    width: 90%;
+    height: 600px;
+    margin-left: 80px;
+    margin-top: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section-2 Ends */

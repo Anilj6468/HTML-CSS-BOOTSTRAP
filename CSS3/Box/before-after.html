@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Jangid Selector Project</title>
+<style>
+    div p
+    {
+        color: blueviolet;
+    }
+    .para
+    {
+        color: blue;
+    }
+    h3
+    {
+        background-color: yellow;
+        height: 30px;
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+    }
+    h3::before
+    {
+        content: "Hii";
+        width: 100px;
+        position: absolute;
+        border-radius: 100%;
+        box-sizing: border-box;
+        left: 0;
+        top: 3;
+        background-color: purple;
+        
+    }
+    /* h3::first-letter
+    {
+        color: aqua; */
+      /*} 
+     nav
+    {
+        width: 250px;
+        height: 400px;
+        border: 2px double black;
+        position: relative;
+    }
+    nav img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    nav::before
+    {
+        content: "";
+        width: 250px;
+        height: 10px;
+        background-color: rgb(170, 211, 22);
+        position: absolute;
+        transition: 5s ease-in-out;
+    }
+    nav:hover::before
+    {
+        height: 400px;
+    } */
+    button
+    {
+        border: none;
+        padding: 5px 5px;
+        background-color: aqua;
+        border-radius: 20%;
+        color: rgb(3, 3, 3);
+        cursor: pointer;
+        position: relative;
+    }
+    button::after
+    {
+        content: "";
+        position: absolute;
+        background-color: aqua;
+        width: 80px;
+        height: 0;
+        top: 0;
+        left: 0;
+        transition: all;
+    }
+    button:hover::after
+    {
+        color: azure;
+    }
+</style>
+</head>
+<body>
+    <!--Selector- Tag, Class, ID, BEfore, After-->
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, dolor expedita voluptatibus cumque eos esse laborum sapiente rem facilis ad?</p>
+    </div>
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate ipsa obcaecati minus! Esse dolorem fugiat eligendi dolorum blanditiis praesentium suscipit, quos sed, incidunt optio in autem perspiciatis adipisci ea aperiam commodi vitae eos aliquid magnam nostrum voluptatibus culpa aliquam cumque! Excepturi, porro repellendus fugit molestiae id illo totam ab.
+    </p>
+    <h3>
+        Anil Jangid
+        <button type="" class="button">
+            Click Here
+        </button>
+    </h3>
+    <!-- <nav>
+        <img src="Images/Hudson-Valley-Residence_img-18.jpg" alt="">
+    </nav> -->
+
+    
+</body>
+</html>

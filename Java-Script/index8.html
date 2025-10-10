@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="test" style="border: 2px solid; padding: 50px"></div>
+  </body>
+</html>
+<script>
+  // createElement
+  // createTextNode
+  // createComment
+  // appendChild
+
+  let h1 = document.createElement("h1");
+  let text = document.createTextNode("This is Heading Tag");
+  h1.appendChild(text);
+
+  let test = document.getElementById("test");
+  test.appendChild(h1);
+
+  let p = document.createElement("p");
+  let paraText = document.createTextNode("This is Paragraph Tag");
+  p.appendChild(paraText);
+
+  test.appendChild(p);
+
+  let ul = document.createElement("ul");
+
+  let li1 = document.createElement("li");
+  let li1Text = document.createTextNode("Home");
+  li1.appendChild(li1Text);
+
+  ul.appendChild(li1);
+
+  let li2 = document.createElement("li");
+  let li2Text = document.createTextNode("About");
+  li2.appendChild(li2Text);
+
+  ul.appendChild(li2);
+
+  test.appendChild(ul);
+</script>

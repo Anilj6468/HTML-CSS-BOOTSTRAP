@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .head {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test"</div>
+  </body>
+</html>
+
+<script>
+  let h1 = document.createElement("h1");
+  h1.innerHTML = "This is Heading Tag";
+  // h1.setAttribute("class", "head");
+  h1.style.color = "blue";
+  // h1.style.backgroundColor = "tan";
+  h1.style.padding = "20px";
+  h1.style.border = "2px dashed";
+
+  let test = document.getElementById("test");
+  test.appendChild(h1);
+</script>

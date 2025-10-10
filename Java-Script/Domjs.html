@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Method Practice Project</title>
+</head>
+<body>
+    <!-- tag(paired, unpaires), content, Element(block, inline) -->
+     <!-- CSS Selector- tag, ID, Class -->
+      <!-- Attributes -->
+
+      <h1>Anil Jangid</h1>
+
+      <h1>Nisha Jangid</h1>      
+
+      <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, suscipit est optio alias qui consequatur doloremque laboriosam, in error tenetur quos quisquam. At laudantium, vel fugit rem aliquid ipsa dolorem.  </p>
+
+      <button>Submit</button>
+</body>
+</html>
+<script>
+    // dom Dcoument(HTML5), Object(Element), Modal(Tree Structure)
+
+    // Select a Element
+    // Document.getElementsByTagName() - to array
+    let h1 = document.getElementsByTagName("h1");
+    console.log(h1);
+
+    // applying css
+  function Dom() {
+    let h1 = document.getElementTagName("h1");
+    h1.style.color = "red";
+    h1.style.backgroundColor = "lightpink";
+    h1.style.fontSize = "10px";
+    h1.style.border = "2px dashed darkred";
+    console.log(h1);
+  }
+
+    // Document.getElementsByClassName() - to array
+  let para = document.getElementsByClassName("para");
+  console.log(para[0]);
+
+  //  Document.getElementsByTagName()
+  let button = document.getElementsByTagName("button");
+  console.log(button[0]);  
+</script>

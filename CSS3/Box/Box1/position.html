@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Jangid Selector Project</title>
+</head>
+<style>
+    body
+    {
+        background-color: gray;
+        margin-left: 300px;
+        margin-top: 300px;
+    }
+    #box1
+    {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 0, 13);
+        text-align: center;
+        display: inline-block;
+    }
+    #box1:hover
+    {
+        border: 3px dotted purple;
+        transform: rotate(60deg);
+    }
+    #box2
+    {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(29, 219, 92);
+        text-align: center;
+        display: inline-block;
+        margin-left: 100px;
+    }
+    #box2:hover
+    {
+        border: 2px solid yellow;
+        transform: translate(40px, 40px);
+    }
+    #box3
+    {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(233, 8, 222);
+        text-align: center;
+        display: inline-block;
+        margin-left: 150px;
+    }
+    #box3:hover
+    {
+        border: 2px solid rgb(238, 238, 237);
+        transform: scalex(2);
+    }
+    #box4
+    {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(233, 8, 222);
+        text-align: center;
+        display: inline-block;
+        margin-left: 150px;
+    }
+    #box4:hover
+    {
+        border: 2px solid rgb(248, 152, 8);
+        transform: skewx(10deg) skewY(10deg);
+    }
+</style>
+<body>
+    <div>
+            <div id="box1"><p>Rotate</p></div>   
+            <div id="box2"><p>Translate</p></div> 
+            <div id="box3"><p>Scale</p></div>       
+            <div id="box4"><p>Skew</p></div>      
+    </div>
+</body>
+</html>

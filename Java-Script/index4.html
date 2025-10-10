@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // get monday to sunday from days (switch case)
+  // find days from month
+  // check profit or loss
+  // calculate salary
+  // nested if (voting)
+
+  //
+
+  let day = 8;
+
+  // if (day == 1) {
+  //   console.log("Monday");
+  // } else if (day == 2) {
+  //   console.log("Tuesday");
+  // } else if (day == 3) {
+  //   console.log("Wednesday");
+  // } else if (day == 4) {
+  //   console.log("Thursday");
+  // } else if (day == "5") {
+  //   console.log("Friday");
+  // } else if (day == 6) {
+  //   console.log("Saturday");
+  // } else if (day == 7) {
+  //   console.log("Sunday");
+  // } else {
+  //   console.log("Invalid Day");
+  // }
+
+  // switch case
+
+  switch (day) {
+    case 1:
+      console.log("Monday");
+      break;
+
+    case 2:
+      console.log("Tuesday");
+      break;
+
+    case 3:
+      console.log("Wednesday");
+
+    case 4:
+      console.log("Thursday");
+      break;
+
+    case 5:
+      console.log("Friday");
+      break;
+
+    case 6:
+      console.log("Saturday");
+      break;
+
+    case 7:
+      console.log("Sunday");
+      break;
+
+    default:
+      console.log("Invalid");
+  }
+
+  //
+  let a = 5;
+  let b = 10;
+
+  // find month
+
+  let month = 1;
+
+  if (month == 1) {
+    console.log("January");
+  } else if (month == 2) {
+    console.log("February");
+  } else if (month == 3) {
+    console.log("March");
+  } else {
+    console.log("Invalid Month");
+  }
+
+  switch (month) {
+    case 1:
+      console.log("January");
+  }
+
+  // check profit or loss
+
+  let actualPrice = 500;
+  let sellingPrice = 450;
+
+  if (sellingPrice > actualPrice) {
+    console.log("Profit");
+    console.log(
+      "Product Price " +
+        actualPrice +
+        " & Selling Price " +
+        sellingPrice +
+        " So Profit is " +
+        (sellingPrice - actualPrice)
+    );
+  } else {
+    console.log("Loss");
+    // console.log("Product Price " + actualPrice + " & Selling Price " + sellingPrice + " So Loss is " +(actualPrice - sellingPrice));
+    console.log(
+      `Product Price is ${actualPrice} & Selling Price is ${sellingPrice} so Loss is ${
+        actualPrice - sellingPrice
+      }}`
+    );
+  }
+
+  //
+
+  let salary = 30001;
+
+  if (salary >= 5000 && salary <= 10000) {
+    // salary = salary + 500;
+    salary += 500;
+  } else if (salary >= 10001 && salary <= 20000) {
+    salary += 1000;
+  } else if (salary >= 20001 && salary <= 30000) {
+    salary += 1500;
+  } else {
+    salary;
+  }
+
+  console.log(salary);
+
+  //  nested if
+
+  let age = 50;
+
+  if (age > 18) {
+    if (age >= 50) {
+      console.log("Eligible for Pension");
+    } else {
+      console.log("Eligible for Voting");
+    }
+  } else {
+    console.log("Not Eligible for Voting");
+  }
+</script>

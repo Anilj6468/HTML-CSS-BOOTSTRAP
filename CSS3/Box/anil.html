@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Jangid Project Box Design</title>
+<style>
+
+    .container{
+        perspective: 800px;
+    }
+
+    .box
+    {
+        width: 150px;
+        height: 150px;
+        margin: 50px auto;
+        transition: all 5s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+    .box:hover
+    {
+        transform: rotatey(360deg) rotatex(360deg);
+    }
+   .front
+   {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: yellow;
+        transform: translateZ(75px);
+   }
+   .back
+   {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: blue;
+    transform: translateZ(-75px) rotateY(180deg);
+   }
+   .left
+   {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: aqua;
+    transform: rotateY(-90deg) translateZ(75px);
+   }
+   .right
+   {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: lightcoral;
+    transform: rotateY(90deg) translateZ(75px);
+   }
+   .top
+   {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(245, 13, 13);
+    transform: rotatex(90deg) translateZ(75px);
+   }
+   .bottom
+   {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(240, 10, 106);
+    transform: rotatex(-90deg) translateZ(75px);
+   }
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+            <div class="left">Left</div>
+            <div class="right">Right</div>
+            <div class="top">TOP</div>
+            <div class="bottom">BOTTOM</div>
+        </div>
+    </div>
+</body>
+</html>

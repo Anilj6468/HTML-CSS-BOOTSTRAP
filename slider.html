@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider Anil Jangid Project</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #slider {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 400px;
+      }
+
+      #img img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      #head2 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+
+      #slide_disc,
+      #locat {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+
+      button {
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slider">
+      <div id="img">
+        <img src="" alt="" id="slide_img" />
+      </div>
+
+      <h2 id="head2"><strong></strong></h2>
+
+      <p id="slide_disc"></p>
+
+      <p id="locat"><strong>Location: </strong></p>
+
+      <button onclick="prevBtn()">Prev</button>
+      <button onclick="nextBtn()">Next</button>
+    </div>
+  </body>
+</html>
+<script>
+  // slides
+
+  let slide = [
+    {
+      images:
+        "https://jobs.vinayakinfosoft.com/wp-content/uploads/2022/12/HTML-Developer-02.jpg",
+      job_title: "HTML Developer",
+      job_Description:
+        "To oversee the design, development, and execution of website projects for our clients, we are searching for an experienced HTML developer. You will be expected to work with website designers to create the original web design, develop the code, guarantee cross-platform compatibility, and offer user assistance in this capacity.",
+      location: "Ahmedabad",
+    },
+    {
+      images:
+        "https://jobs.vinayakinfosoft.com/wp-content/uploads/2023/10/Front-end-Developer-02.jpg",
+      job_title: "Fronted Developer",
+      job_Description:
+        "#1 Vinayak InfoSoft - SEO Company Ahmedabad, a trailblazer in search engine optimization in Ahmedabad with a legacy since 1999, is on the lookout for skilled Front End Developers to elevate digital presence. We are in search of passionate and gifted folks that will shape the future of our HTML web development projects.",
+      location: "Ahmedabad",
+    },
+    {
+      images:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTKrHGCBpv3ou71L2OLbSoEmwfH1tPLBEtg&s",
+      job_title: "Senior Java Developer",
+      job_Description:
+        "Java Developer We are looking for a JAVA Engineer with a minimum of 2 to 8 years of experience in building high-performing, scalable, enterprise-grade applications with strong core Java and OOPS concepts and a strong understanding of collection fundamentals. What are we looking for? EXPERIENCE : 2-8 Years ",
+      location: "Ahmedabad",
+    },
+    {
+      images:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTKrHGCBpv3ou71L2OLbSoEmwfH1tPLBEtg&s",
+      job_title: "Senior Frontend Developer (React JS)",
+      job_Description:
+        "Senior Frontend Developer (React JS) Required candidate profile Roles and Responsibilities ",
+      location: "Ahmedabad",
+    },
+    {
+      images:
+        "https://i.pinimg.com/736x/54/e9/a0/54e9a0ea411025de0ab524e3045c55cb.jpg",
+      job_title: "Wordpress Developer",
+      job_Description:
+        "Best WordPress News Plugins In 2024 Visit at Best WordPress News Plugins In 2024 Wbcom Designs",
+      location: "Ahmedabad",
+    },
+  ];
+  //   console.log(slide[0].job_title);
+  //   console.log(slide[1].job_title);
+  //   console.log(slide[2].job_title);
+  //   console.log(slide[3].job_title);
+
+  console.log(slide.length);
+
+  let currentindex = 0;
+
+  const employee_data = () => {
+    document.getElementById("slide_img").src = slide[currentindex].images;
+    document.getElementById("head2").innerHTML = slide[currentindex].job_title;
+    document.getElementById("slide_disc").innerHTML =
+      slide[currentindex].job_Description;
+    document.getElementById("locat").innerHTML = slide[currentindex].location;
+  };
+  const nextBtn = () => {
+    currentindex++;
+
+    if (currentindex >= slide.length) {
+      currentindex = 0;
+    }
+
+    employee_data();
+  };
+
+  const prevBtn = () => {
+    currentindex--;
+
+    if (currentindex < 0) {
+      currentindex = slide.length - 1;
+    }
+
+    employee_data();
+  };
+
+  employee_data();
+</script>

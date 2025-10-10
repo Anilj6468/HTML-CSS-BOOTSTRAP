@@ -1,0 +1,113 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  console.log("125");
+
+// document.write("Hello");
+
+// variables
+// var, let, const
+
+// var - (global scope), redeclarable, value reassign
+
+var name1 = "Alice";
+console.log("Name : " + name1);
+
+var name1 = "John";
+console.log(name1);
+
+name1 = "Tony";
+console.log(name1);
+
+{
+  console.log(name1);
+
+  var age = 20;
+
+  console.log(age);
+}
+
+console.log(age);
+
+// let (block scope), not redeclarable, value reassign
+
+let city = "Ahmedabad";
+console.log("City : " + city); // concat
+
+// let city = "Mumbai";
+// console.log("City : " + city); // concat
+
+city = "Mumbai";
+console.log("City : " + city); // concat
+
+{
+  console.log(city);
+
+  let pincode = 383315;
+
+  console.log(pincode);
+}
+
+console.log("City : " + city); // concat
+// console.log(pincode);
+
+// const (block scope), not redeclarable, not value reassign
+
+const pi = 3.14;
+console.log(pi);
+
+// const pi = 3.15;
+// console.log(pi);
+
+// pi = 3.15;
+// console.log(pi);
+
+{
+  console.log(pi);
+
+  const a = 50;
+
+  console.log(a);
+}
+
+const a = 100;
+console.log(a);
+
+// data types - string(""), number, null, undefined, boolean(true/false), array, object
+
+let n = [100, 200, "333", 444, 555];
+
+console.log(n);
+console.log(n[0]);
+console.log(n[1]);
+console.log(n[2]);
+console.log(n[3]);
+console.log(n[4]);
+
+let arr = ["Raj", 20, "Ahmedabad", "India", "Team Leader"];
+document.write(arr);
+// object : (key:value)
+
+let obj = {
+  name: "Raj",
+  age: 20,
+  city: "Ahmedabad",
+  country: "India",
+  job_role: "Team Leader"
+};
+
+console.log(obj);
+console.log(obj.name);
+console.log(obj.age);
+console.log(obj.city);
+console.log(obj.country);
+console.log(obj.job_role);
+// document.write(obj);
+</script>

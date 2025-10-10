@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method Practice</title>
+</head>
+<body></body>
+</html>
+<script>
+    // Data Types of array = String, Number, Boolean(True / False), Null, Undefined, Array, Object
+
+    // pop() - to delete last value with array
+    let fruits = ["Mango","Banana","Watermelon", "Lemon","Apple", "Orange",];
+    console.log(fruits);
+    
+    fruits.pop();
+    console.log(fruits);
+
+    // push() - to add last value with array
+
+    let number = [2,3,4,5,6,7,8,9,0,1,1,2,1];
+    console.log(number);
+
+    number.push(1,2.3,4,5,6,7,8,9,10,11,12,13,14,15);
+    console.log(number); 
+    
+    // shift() - to delete first value with array
+
+    let product = ["Mango","Anil Jangid", "Nisha jangid", "Banana", "Apple"];
+    console.log(product);   
+    
+    product.shift();
+    console.log(product);
+
+    // unshift() - to add first value with array
+    let number1 = [23, 24,25,26,27,28,23,22,21];
+    console.log(number1);
+
+    number1.unshift(1,2,3,4,5,6);
+    console.log(number1);
+
+    // splice() - to delete and add value with array
+    let name = ["Anil","Shubham","Tanvisha","Nathan","Raj","Kishan"];
+    console.log(name);
+    
+    name.splice(2,2,1,2,3,4,5,6);
+    console.log(name);
+
+    // slice() - to create new array
+    let num1 =[22,33,44,55,66,77,88,99,0,77,77,77,33,"Anil Jangid"];
+    console.log(num1);
+    
+    num1.slice();
+    console.log(num1);   
+    
+    // includes() - to value true or false with array
+
+    num1.includes([]);
+    console.log(num1);    
+</script>

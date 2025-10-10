@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+<script>
+  // nested if else
+
+  let username = "Admin";
+  let password = "123456789";
+
+  if (username === "Admin") {
+    if (password === "123456789") {
+      console.log("Login Successful");
+    } else {
+      console.log("Wrong Password");
+    }
+  } else {
+    console.log("User Not Found");
+  }
+
+
+  let temperature = 20;
+  let isRaining = false;
+
+  if (temperature > 30 && isRaining) {
+    console.log("It's Hot and Raining");
+  } else if (temperature > 30) {
+    console.log("It's Just Hot");
+  } else if (isRaining) {
+    console.log("It's Just Raining");
+  } else {
+    console.log("Nice Weather");
+  }
+
+  let playerScore = 750;
+  let playerLevel;
+
+  if (playerScore >= 1000) {
+    playerLevel = "Expert";
+  } else if (playerScore >= 750) {
+    playerLevel = "Advanced";
+  } else if (playerScore >= 500) {
+    playerLevel = "Intermediate";
+  } else if (playerScore >= 250) {
+    playerLevel = "Beginner";
+  } else {
+    playerLevel = "Newbie";
+  }
+
+  console.log(Player Level : ${playerLevel});
+
+  //
+  let number = 41;
+
+  // Syntax => (condition) ? "" : ""
+  // Ternary Operator
+  number % 2 === 0 ? console.log("Even") : console.log("Odd");
+
+  // null/undefined checking
+
+  let userName = "Tony Stark";
+
+  if (userName === null || userName === undefined) {
+    console.log(Hello Guest);
+  } else {
+    console.log(Hello ${userName});
+  }
+</script>
+
+ <script>
+      // new Date()
+
+      let date = new Date();
+      console.log(date);
+      console.log(date.toDateString());
+      console.log(date.toISOString());
+      console.log(date.toLocaleDateString());
+      console.log(date.toLocaleString());
+      console.log(date.toLocaleTimeString());
+      console.log(date.toTimeString());
+      console.log(date.toUTCString());
+
+      // Math.floor()
+      let a = 5.1;
+
+      console.log(Math.floor(a));
+
+      // Math.ceil()
+
+      console.log(Math.ceil(a));
+
+      // Math.round()
+
+      console.log(Math.round(a));
+
+      // Math.random()
+
+      console.log(Math.random() * 11);
+
+      console.log(Math.floor(Math.random() * 11));
+
+      let aa = [
+        "Mango",
+        "Banana",
+        "Grapes",
+        "Papaya",
+        "Watermelon",
+        "Apple",
+        "Dragon Fruit",
+        "Lichi",
+        "Kiwi"
+      ];
+      console.log(aa[Math.floor(Math.random() * 9)]);
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-Array Of Object</title>
+</head>
+<body>
+    <!-- Array -->
+    <!-- Object -->
+    <!-- Array of Object -->
+    <!-- object of Array -->
+</body>
+</html>
+<script>
+  // Data Type - string, number, boolean(true/false), null, undefined, array, object
+
+  // Array -  to store multiple values with different data types
+  let arr = [
+    "Raj",
+    26,
+    "frontend developer",
+    25000,
+    18 - 8 - 1999,
+    "Ahmedabad",
+    null,
+    undefined,
+    true,
+    false,
+    [1, 2, 3, 4, 5, 6],
+    { name: "Pushpraj", age: 20 }
+  ];
+
+  // console.log(arr);
+
+  const fruits = [
+    "Apple",
+    "Mango",
+    "Kiwi",
+    "Lichi",
+    "Watermelon",
+    [
+      11,
+      22,
+      33,
+      44,
+      55,
+      ["KGF", "KGF 2", "Salaar", "Bhageera", "Chhava"],
+      66,
+      77,
+      88,
+      99
+    ]
+  ];
+  console.log(fruits);
+  console.log(fruits[0]);
+  console.log(fruits[1]);
+  console.log(fruits[2]);
+  console.log(fruits[3]);
+  console.log(fruits[4]);
+  // let a = fruits[5];
+  // console.log(a[3]);
+  console.log(fruits[5][5][4]);
+
+  // destructuring
+
+  const movies = [
+    "KGF",
+    "KGF 2",
+    "Salaar",
+    "Bhageera",
+    "Chhava",
+    [7, 9, 5, 4, 3, 6, 8, 1]
+  ];
+  // document.write(movies);
+  console.log(movies);
+  console.log(movies[0]);
+  console.log(movies[1]);
+  console.log(movies[2]);
+  console.log(movies[3]);
+  console.log(movies[4]);
+
+  const [a, b, c, d, e, f] = movies;
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+  console.log(d);
+  console.log(e);
+  console.log(f[0]);
+  console.log(f[1]);
+
+  // object - key:value
+
+  let obj = {
+    name: "Alice",
+    age: 20,
+    city: "Ahmedabad",
+    pincode: 380061,
+    movies1: ["KGF", "KGF 2", "Salaar", "Bhageera", "Chhava"]
+  };
+
+  console.log(obj.movies1[0]);
+
+  console.log(obj);
+  console.log(obj.name);
+  console.log(obj.age);
+  console.log(obj.city);
+  console.log(obj.pincode);
+  document.write(obj);
+  document.write(obj.name);
+  document.write(obj.age);
+  document.write(obj.city);
+  document.write(obj.pincode);
+
+  // destructuring
+
+  const { name, age, city, pincode, movies1 } = obj;
+
+  console.log(name);
+  console.log(age);
+  console.log(city);
+  console.log(pincode);
+  console.log(movies1[3]);
+
+  //Array of Object
+
+  let arrObj = [
+    {
+      post: "Developer",
+      salary: 5000
+    },
+    {
+      post: "Manager",
+      salary: 8000
+    },
+    {
+      post: "HR",
+      salary: 4000
+    }
+  ];
+
+  console.log(arrObj);
+  console.log(arrObj[1].post);
+  console.log(arrObj[1].salary);
+
+  let bb = ["Developer", 5000, "Manager", 8000, "HR", 4000];
+
+  //
+
+  let gg = [1, 2, 3, 4, 5];
+
+  gg[2] = {name:"khsfbvh"};
+
+  console.log(gg);
+</script>
